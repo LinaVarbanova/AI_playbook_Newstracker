@@ -1,6 +1,6 @@
 # How I built my own AI news intelligence dashboard in an afternoon
 
-*A practical, end-to-end walkthrough for building a self-hosted AI news aggregator that classifies stories by importance using Claude — and a clean web dashboard you can keep open all day.*
+*A practical, end-to-end walkthrough for building a self-hosted AI news aggregator that classifies stories by importance  — and a clean web dashboard you can keep open all day.*
 
 ---
 
