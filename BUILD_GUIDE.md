@@ -449,16 +449,6 @@ The result is a ~750 KB HTML file you can attach to a LinkedIn post, e-mail to a
 
 ---
 
-## What's next
-
-Things I'm planning to add:
-
-- **Slack digest** — once a day, post the Major + Notable items to a private channel.
-- **Email summary** — a Sunday weekly digest by topic, rendered to plain text.
-- **Custom interest weighting** — let me upweight certain authors / orgs without forking the prompt.
-- **A second classifier pass** — flag items where multiple sources covered the same story (cross-source dedup).
-- **Vector search** — "what was that paper about long-context attention from last month?"
-
 If you want to build this yourself, I'm happy to share the full repo. Drop me a message on LinkedIn.
 
 If you found this useful, consider subscribing to **The AI Value Playbook** — a weekly newsletter where I write about shipping AI that actually creates business value, with practical builds like this one.
