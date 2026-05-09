@@ -17,7 +17,7 @@ So I built **The AI Dispatch** — a local Python app that:
 - Stores everything in SQLite
 - Renders a clean web dashboard at `localhost:8765`
 - Refreshes automatically every 3 hours via macOS `launchd`
-- Costs me about **$15/month** in API credits
+
 
 It's about ~1,200 lines of Python total, **provider-agnostic** so you can plug in whichever LLM you have a key for. You can build the same thing in an afternoon.
 
@@ -35,7 +35,7 @@ scheduler.py  # the orchestrator — runs every 3h
 web/          # FastAPI dashboard, ~50 lines + Jinja template
 ```
 
-Free tools, no account creation other than Anthropic's. Total third-party services: **one** (the Claude API).
+Free tools, no account creation other than your LLM of choice. (the Claude API/ OpenAI API / etc.).
 
 **A note on social platforms.** I researched this carefully. As of 2026:
 
@@ -434,22 +434,6 @@ Path("export/dispatch.html").write_text(html)
 The result is a ~750 KB HTML file you can attach to a LinkedIn post, e-mail to a colleague, or host on any static server. No backend, no API keys baked in (I checked with `grep -i "sk-ant" export/dispatch.html` — clean).
 
 ---
-
-## What I learned
-
-**The classifier matters more than the collectors.** My collectors took an afternoon. My classifier rubric took a week of tuning. Importance is subjective — what's "major" depends on what you care about. Spend time on the prompt.
-
-**Source weight beats source quantity.** I'd rather have 8 well-curated sources than 80 noisy ones. Adding TechCrunch's full feed costs me nothing in API spend but a lot in noise. Curate aggressively.
-
-**SQLite is more than enough.** For 1,000 items/week and one user, SQLite is faster, simpler, and more reliable than anything else. The whole DB after a month is 12 MB.
-
-**Don't fight LinkedIn or X.** Their anti-scraping measures changed three times in the last two years. Bluesky has the same researchers and a real public API. Move on.
-
-**Refresh cadence is a personal call.** I do 3 hours. Some friends do 1 hour. The cost difference is negligible (most refreshes find <30 new items). The signal-to-noise difference is real — refreshing too often gives you the dopamine of news but breaks your concentration. Find your rhythm.
-
----
-
-If you want to build this yourself, I'm happy to share the full repo. Drop me a message on LinkedIn.
 
 If you found this useful, consider subscribing to **The AI Value Playbook** — a weekly newsletter where I write about shipping AI that actually creates business value, with practical builds like this one.
 
