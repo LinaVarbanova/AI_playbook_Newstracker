@@ -121,7 +121,7 @@ launchctl unload ~/Library/LaunchAgents/com.ainews.tracker.plist
 
 ## Costs
 
-Classifier uses whichever provider you set in `config.yaml`. Expected ~$0.05–0.15 per run with the cheap-tier models on either platform (Claude Haiku 4.5, GPT-5 mini, GPT-4o-mini). At 8 runs/day (every 3h) most runs find few new items, so realistic monthly cost is **~$10–25/month** at typical volumes. Monitor on the provider's dashboard.
+Classifier uses whichever provider you set in `config.yaml`. Monitor on the provider's dashboard.
 
 ## Security note
 
